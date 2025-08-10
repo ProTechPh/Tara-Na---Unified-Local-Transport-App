@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "Tara Na",
+    "slug": "tara-na",
+    "scheme": "tarana",
+    "version": "0.1.0",
+    "orientation": "portrait",
+            "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {},
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": ["expo-router"]
+  }
+}

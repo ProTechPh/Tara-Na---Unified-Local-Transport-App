@@ -1,0 +1,68 @@
+# Tara Na — Unified Local Transport App
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.env.local
+*.env.development
+*.env.production
+*.env.test
+*.envrc
+*.secret
+*.secrets
+*.pem
+*.key
+
+# Supabase (CLI/Functions related)
+supabase/.temp/
+supabase/.branches/
+supabase/.env
+supabase/.env.*
+supabase/functions/**/.env
+supabase/functions/**/.env.*
+
+# Node / TypeScript
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+build/
+**/build/
+.tmp/
+.temp/
+.cache/
+**/.cache/
+
+# Logs
+logs/
+**/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+**/coverage/
+
+# Framework-specific
+.next/
+.turbo/
+
+# React Native / Expo
+.expo/
+.expo-shared/
+web-build/
+android/
+ios/
+*.keystore
+*.jks
