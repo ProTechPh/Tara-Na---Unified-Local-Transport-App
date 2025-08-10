@@ -3,6 +3,8 @@ import express from 'express';
 import cors from 'cors';
 
 import { router as routesRouter } from './routes/routes';
+import { router as announcementsRouter } from './routes/announcements';
+import { router as reportsRouter } from './routes/reports';
 
 const app = express();
 app.use(cors());
@@ -13,6 +15,8 @@ app.get('/health', (_req, res) => {
 });
 
 app.use('/routes', routesRouter);
+app.use('/announcements', announcementsRouter);
+app.use('/reports', reportsRouter);
 
 const port = process.env.PORT ? Number(process.env.PORT) : 4000;
 app.listen(port, () => {
